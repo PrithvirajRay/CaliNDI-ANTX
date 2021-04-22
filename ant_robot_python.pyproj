@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{374f62d0-b521-4c1c-b0d4-e8a20389814d}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>ant_robot\standalone\app.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>Global|PythonCore|3.6</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="ant_robot\DeviceSetting.txt" />
+    <Content Include="ant_robot\resources\icons\motor_calibration.png" />
+    <Content Include="ant_robot\resources\icons\motor_controller.png" />
+    <Content Include="ant_robot\resources\icons\robot_setting.png" />
+    <Content Include="ant_robot\resources\icons\serial_setting.png" />
+    <Content Include="ant_robot\standalone\app_config.txt" />
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ant_robot\core\constants.py" />
+    <Compile Include="ant_robot\core\ctrl_mgr.py" />
+    <Compile Include="ant_robot\core\gui\ctrls\main_controller_ctrl.py" />
+    <Compile Include="ant_robot\core\gui\ctrls\main_menu_ctrl.py" />
+    <Compile Include="ant_robot\core\gui\ctrls\motor_basic_monitor_ctrl.py" />
+    <Compile Include="ant_robot\core\gui\ctrls\motor_control_ctrl.py" />
+    <Compile Include="ant_robot\core\gui\ctrls\robot_navigator_ctrl.py" />
+    <Compile Include="ant_robot\core\gui\ctrls\robot_setting_ctrl.py" />
+    <Compile Include="ant_robot\core\gui\ctrls\serial_setting_ctrl.py" />
+    <Compile Include="ant_robot\core\gui\ctrls\__init__.py" />
+    <Compile Include="ant_robot\core\gui\models\robot_setting_model.py" />
+    <Compile Include="ant_robot\core\gui\models\serial_setting_model.py" />
+    <Compile Include="ant_robot\core\gui\models\__init__.py" />
+    <Compile Include="ant_robot\core\gui\views\main_controller_view.py" />
+    <Compile Include="ant_robot\core\gui\views\main_menu_view.py" />
+    <Compile Include="ant_robot\core\gui\views\motor_basic_monitor_view.py" />
+    <Compile Include="ant_robot\core\gui\views\motor_control_view.py" />
+    <Compile Include="ant_robot\core\gui\views\override_widget.py" />
+    <Compile Include="ant_robot\core\gui\views\robot_navigator_view.py" />
+    <Compile Include="ant_robot\core\gui\views\robot_setting_view.py" />
+    <Compile Include="ant_robot\core\gui\views\serial_port_config_view.py" />
+    <Compile Include="ant_robot\core\gui\views\serial_setting_view.py" />
+    <Compile Include="ant_robot\core\gui\views\ui\main_controller_ui.py" />
+    <Compile Include="ant_robot\core\gui\views\ui\main_menu_ui.py" />
+    <Compile Include="ant_robot\core\gui\views\ui\motor_basic_monitor_ui.py" />
+    <Compile Include="ant_robot\core\gui\views\ui\motor_control_ui.py" />
+    <Compile Include="ant_robot\core\gui\views\ui\robot_navigator_ui.py" />
+    <Compile Include="ant_robot\core\gui\views\ui\robot_setting_ui.py" />
+    <Compile Include="ant_robot\core\gui\views\ui\serial_port_config_ui.py" />
+    <Compile Include="ant_robot\core\gui\views\ui\serial_setting_ui.py" />
+    <Compile Include="ant_robot\core\gui\views\ui\__init__.py" />
+    <Compile Include="ant_robot\core\gui\views\__init__.py" />
+    <Compile Include="ant_robot\core\gui\__init__.py" />
+    <Compile Include="ant_robot\core\pub_message.py" />
+    <Compile Include="ant_robot\core\robot\motor_cmd.py" />
+    <Compile Include="ant_robot\core\robot\robot_calculation.py" />
+    <Compile Include="ant_robot\core\robot\robot_calculation_process.py" />
+    <Compile Include="ant_robot\core\robot\robot_motion_executor.py" />
+    <Compile Include="ant_robot\core\robot\robot_status_monitor.py" />
+    <Compile Include="ant_robot\core\robot\__init__.py" />
+    <Compile Include="ant_robot\core\serial\i_serial_device.py" />
+    <Compile Include="ant_robot\core\serial\serial_base.py" />
+    <Compile Include="ant_robot\core\serial\serial_device_mgr.py" />
+    <Compile Include="ant_robot\core\serial\serial_joystick_async_wrapper.py" />
+    <Compile Include="ant_robot\core\serial\serial_robot.py" />
+    <Compile Include="ant_robot\core\serial\serial_robot_async_wrapper.py" />
+    <Compile Include="ant_robot\core\serial\__init__.py" />
+    <Compile Include="ant_robot\core\utils.py" />
+    <Compile Include="ant_robot\core\__init__.py" />
+    <Compile Include="ant_robot\misc\debug.py" />
+    <Compile Include="ant_robot\misc\ui_generator.py" />
+    <Compile Include="ant_robot\misc\__init__.py" />
+    <Compile Include="ant_robot\resources\resources_rc.py" />
+    <Compile Include="ant_robot\resources\__init__.py" />
+    <Compile Include="ant_robot\standalone\app.py" />
+    <Compile Include="ant_robot\standalone\app_config.py" />
+    <Compile Include="ant_robot\__init__.py" />
+    <Compile Include="ant_robot_test\robot_calculation_test.py" />
+    <Compile Include="__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ant_robot" />
+    <Folder Include="ant_robot\core" />
+    <Folder Include="ant_robot\core\gui" />
+    <Folder Include="ant_robot\core\gui\ctrls" />
+    <Folder Include="ant_robot\core\gui\models" />
+    <Folder Include="ant_robot\core\gui\views" />
+    <Folder Include="ant_robot\core\gui\views\ui" />
+    <Folder Include="ant_robot\core\robot" />
+    <Folder Include="ant_robot\core\serial" />
+    <Folder Include="ant_robot\misc" />
+    <Folder Include="ant_robot\resources" />
+    <Folder Include="ant_robot\resources\icons" />
+    <Folder Include="ant_robot\standalone" />
+    <Folder Include="ant_robot_test" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.6" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
